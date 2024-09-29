@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SUDOKU GAME</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <header>
+        <h1>Sudoku</h1>
+        <div id="game setup">
+            <div id="diff">
+                <h3>choose difficulty:</h3>
+                <label><input id="time-1" type="radio" name="diff" value="easy" checked>Easy</label>
+                <label><input id="time-2" type="radio" name="diff" value="medium">Medium</label>
+                <label><input id="time-3" type="radio" name="diff" value="hard">Hard</label>
+
+            </div>
+            <div id="time">
+                <h3>choose Time:</h3>
+                <label><input id="time-1" type="radio" name="time" value="three" checked>3 Min</label>
+                <label><input id="time-2" type="radio" name="time" value="five">5 Min</label>
+                <label><input id="time-3" type="radio" name="time" value="ten">10 Min</label>
+            </div>
+            <div id="theme">
+                <h3>Choose Theme:</h3>
+                <label><input id="theme-1" type="radio" name= "theme" value="light" checked>Light</label>
+                <label><input id="theme-2" type="radio" name= "theme" value="dark">Dark</label>
+            </div>
+        </div>
+        <button>NEW GAME</button>  
+
+    </header>
+<body>
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+</body>
+</html>
