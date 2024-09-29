@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: #650b75;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+
+#game-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+
+#diff, #time, #theme {
+    background-color: rgb(243, 142, 216);
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 400px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+#diff label, #time label, #theme label {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
