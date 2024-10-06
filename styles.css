@@ -1,12 +1,12 @@
 .hidden {
-    display:none;
-
+    display: none;
 }
 
 body.dark {
-    background-color:rgb(44, 47, 47) ;
-    color:whitesmoke;
+    background-color: rgb(44, 47, 47);
+    color: whitesmoke;
 }
+
 header {
     text-align: center;
     padding-bottom: 10px;
@@ -20,14 +20,13 @@ h1 {
 #game-setup {
     display: flex;
     justify-content: center;
-    
 }
 
 #game-setup > * {
     margin-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    display: flex;;
+    display: flex;
     align-items: center;
 }
 
@@ -39,25 +38,12 @@ p#timer, p#lives {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-
 }
 
 #game {
     display: flex;
-    justify-content: center;
-}
-
-#number-container > p {
-    border: 1px solid black;
-    border-radius: 20%;
-    width: 60px;
-    height: 60px;
-    font-size: 40pt;
-    margin-left: 50px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    text-align: center;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 #board {
@@ -69,7 +55,6 @@ p#timer, p#lives {
     align-content: flex-start;
     width: 600px;
     height: 600px;
-
 }
 
 .tile {
@@ -80,6 +65,31 @@ p#timer, p#lives {
     margin: 0;
     vertical-align: middle;
     font-size: 40pt;
+}
+
+#number-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#number-container > p {
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 60px;
+    height: 60px;
+    font-size: 40pt;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+#number-container > p:hover {
+    background-color: lightgray;
 }
 
 p.selected {
